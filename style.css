@@ -13,13 +13,18 @@ body {
 }
 
 .container {
-  width: 90vw;
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
 }
-
+.left {
+  order: 2;
+}
+.right {
+  order: 1;
+}
 .card {
   background-color: #fff;
   border-radius: 20px;
@@ -48,7 +53,7 @@ body {
   margin: 1px;
   border-radius: 10px;
 }
-#selection{
+#selection {
   margin: 40px 20px;
   color: #fff;
   background-color: #3498db;
@@ -62,4 +67,9 @@ button:focus {
 }
 button:active {
   transform: scale(0.9);
+}
+@media only screen and (max-width: 536px) {
+  .card {
+    width: 350px;
+  }
 }
