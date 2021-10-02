@@ -48,4 +48,18 @@ body {
   margin: 1px;
   border-radius: 10px;
 }
-
+#selection{
+  margin: 40px 20px;
+  color: #fff;
+  background-color: #3498db;
+  border: 0;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  transform: scale(0.9);
+}
